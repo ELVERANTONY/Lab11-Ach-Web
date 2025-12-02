@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="layout/layout :: head('Inicio')"></head>
+<body>
+    <header th:replace="layout/layout :: header"></header>
+
+    <div class="container mt-4">
+        <h1>Bienvenido al Sistema de Gestión de Cursos</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <p class="card-text" th:if="${#authorization.expression('isAuthenticated()')}">
+                    Ir al <a th:href="@{/cursos/list}" class="btn btn-primary">Mantenimiento de Cursos</a>.
+                </p>
+                <p class="card-text" th:if="${!#authorization.expression('isAuthenticated')}">
+                    <a th:href="@{/login}" class="btn btn-success">Iniciar sesión</a> para acceder al sistema.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>

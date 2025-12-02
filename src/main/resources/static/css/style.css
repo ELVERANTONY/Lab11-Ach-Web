@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+.navbar {
+  background: #343a40;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 0.75rem;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-badge {
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.lang-badge-es {
+  background: #28a745;
+}
+
+.lang-badge-en {
+  background: #6c757d;
+}
+
+.btn-lang {
+  padding: 0.3rem 0.9rem;
+  border-radius: 3px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.page-header {
+  margin-bottom: 0.5rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+  background: #4caf50;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.page-header-line {
+  height: 3px;
+  background: #e5e5e5;
+  margin-bottom: 0.8rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.toolbar-exports .btn {
+  margin-left: 0.3rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  padding: 0.5rem 0.75rem;
+}
+
+.table th {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.btn {
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.btn-primary {
+  background: #007bff;
+}
+
+.btn-danger {
+  background: #dc3545;
+}
+
+.btn-create {
+  background: #28a745;
+}
+
+.btn-pdf {
+  background: #dc3545;
+}
+
+.btn-xls {
+  background: #28a745;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  margin-top: 2rem;
+  border-top: 1px solid #dddddd;
+  font-size: 0.8rem;
+}
+
+/* Login modal style similar to browser popup */
+.login-section {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal {
+  width: 360px;
+  background: #111827;
+  color: #f9fafb;
+  padding: 1.6rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.login-modal h2 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.login-url {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.login-field {
+  margin-bottom: 0.8rem;
+}
+
+.login-field label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 0.35rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid #4b5563;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-login {
+  background: #00bcd4;
+}
+
+.btn-cancel {
+  background: #4b5563;
+}
